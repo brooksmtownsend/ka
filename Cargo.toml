@@ -1,0 +1,15 @@
+[package]
+name = "ka-cli"
+version = "0.1.0"
+edition = "2021"
+description = "Kill a bunch of things!"
+license = "Apache 2.0"
+repository = "https://github.com/brooksmtownsend/ka"
+
+[[bin]]
+name = "ka"
+path = "src/main.rs"
+
+[dependencies]
+clap = { version = "4.2.7", features = ["derive"] }
+sysinfo = "0.29.0"
